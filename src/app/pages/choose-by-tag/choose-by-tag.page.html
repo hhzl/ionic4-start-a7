@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Choose word group</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+<ion-button routerLink="/choose-by-tag-a" routerDirection="forward" expand="block" size="large">animals</ion-button>
+
+<ion-button routerLink="/choose-by-tag-f" routerDirection="forward" expand="block" size="large">food</ion-button>
+
+<ion-button  (click)="allItemsFilteredByTag('school')" routerDirection="forward" expand="block" size="large">school</ion-button>
+
+<ion-button  (click)="allItemsFilteredByTag('transport')" routerDirection="forward" expand="block" size="large">transport</ion-button>
+
+<ion-button  (click)="allItemsFilteredByTag('house')" routerDirection="forward" expand="block" size="large">house</ion-button>
+
+<ion-button  (click)="allItemsFilteredByTag('clothing')" routerDirection="forward" expand="block" size="large">clothing</ion-button>
+
+<ion-button  (click)="allItemsFilteredByTag('environment')" routerDirection="forward" expand="block" size="large">environment
+</ion-button>
+
+
+<ion-button  (click)="allItemsFilteredByTag('farming')" routerDirection="forward" expand="block" size="large">farming</ion-button>
+
+</ion-content>

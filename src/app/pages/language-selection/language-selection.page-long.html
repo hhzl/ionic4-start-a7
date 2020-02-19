@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Language selection</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+<ion-radio-group (ionChange)="onChangeHandler($event)">
+    <ion-item>
+      <ion-label>Adele</ion-label>
+      <ion-radio value="Adele" [checked]="this.selectedRadio==='Adele'"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Akuapem Twi</ion-label>
+      <ion-radio value="Akuapem Twi" [checked]="this.selectedRadio==='Akuapem Twi'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Bimoba</ion-label>
+      <ion-radio value="Bimoba" [checked]="this.selectedRadio==='Bimoba'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Birifor</ion-label>
+      <ion-radio value="Birifor" [checked]="this.selectedRadio==='Birifor'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Buli</ion-label>
+      <ion-radio value="Buli" [checked]="this.selectedRadio==='Buli'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Dagbani</ion-label>
+      <ion-radio value="Dagbani" [checked]="this.selectedRadio==='Dagbani'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Ewe</ion-label>
+      <ion-radio value="Ewe" [checked]="this.selectedRadio==='Ewe'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>French</ion-label>
+      <ion-radio value="French" [checked]="this.selectedRadio==='French'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>German</ion-label>
+      <ion-radio value="German" [checked]="this.selectedRadio ==='German'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Gonja</ion-label>
+      <ion-radio value="Gonja" [checked]="this.selectedRadio ==='Gonja'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Gikyode</ion-label>
+      <ion-radio value="Gikyode" [checked]="this.selectedRadio==='Gikyode'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Gurene</ion-label>
+      <ion-radio value="Gurene" [checked]="this.selectedRadio==='Gurene'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Hanga</ion-label>
+      <ion-radio value="Hanga" [checked]="this.selectedRadio==='Hanga'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Kusaal</ion-label>
+      <ion-radio value="Kusaal" [checked]="this.selectedRadio==='Kusaal'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mampruli</ion-label>
+      <ion-radio value="Mampruli" [checked]="this.selectedRadio==='Mampruli'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Tampulma</ion-label>
+      <ion-radio value="Tampulma" [checked]="this.selectedRadio==='Tampulma'"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sisaala</ion-label>
+      <ion-radio value="Sisaala" [checked]="this.selectedRadio==='Sisaala'"></ion-radio>
+    </ion-item>
+
+  </ion-radio-group>
+
+
+
+</ion-content>

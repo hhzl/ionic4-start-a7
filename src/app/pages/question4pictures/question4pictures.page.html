@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+<h1 (click)="listen()">{{ this.wordToAsk() }}</h1>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+     <div  class="pic2select"> 
+     <img (click)="click(0)" src="assets/data/pictures/{{ this.choices()[0].picture }}">
+     </div>
+
+     <div  class="pic2select"> 
+     <img (click)="click(1)" src="assets/data/pictures/{{ this.choices()[1].picture }}">
+     </div>
+
+     <div class="pic2select"> 
+     <img (click)="click(2)" src="assets/data/pictures/35.jpg">
+     </div>
+
+     <div class="pic2select"> 
+     <img (click)="click(3)" src="assets/data/pictures/42.jpg">
+     </div>
+
+
+
+</ion-content>

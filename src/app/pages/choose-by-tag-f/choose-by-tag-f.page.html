@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Choose food group</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+<ion-button  (click)="allItemsFilteredByTag('food')" routerDirection="forward" expand="block" size="large">all food</ion-button>
+
+<ion-button  (click)="allItemsFilteredByTag('fruit')" routerDirection="forward" expand="block" size="large">fruits</ion-button>
+
+<ion-button  (click)="allItemsFilteredByTag('vegetable')" routerDirection="forward" expand="block" size="large">vegetables</ion-button>
+
+<ion-button  (click)="allItemsFilteredByTag('stapleFood')" routerDirection="forward" expand="block" size="large">staple food</ion-button>
+
+<ion-button  (click)="allItemsFilteredByTag('otherFood')" routerDirection="forward" expand="block" size="large">other food</ion-button>
+
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Settings</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+<!-- languageArray index starts with 0  -->
+
+<p>
+<ion-checkbox [checked]="useBasicSelectionCheckBox"(ionChange)="useBasicSelection($event)"></ion-checkbox> Use basic selection of pictures
+</p>
+
+
+<h3>{{this.service.settings.language2}}</h3>  
+<p>
+<ion-checkbox [checked]="includePicturesWithNoLabelCheckBox"(ionChange)="includePicturesWithNoLabel($event)"></ion-checkbox> Include pictures with no label 
+</p>
+
+<ion-button  (click)="setLanguage(2)">language 2</ion-button>
+
+
+<p>
+<ion-checkbox  [checked]="useThirdLanguageCheckBox"(ionChange)="useThirdLanguage($event)"></ion-checkbox> Use third language 
+</p>
+
+<h3>{{this.service.settings.language3}}</h3>  
+<ion-button  (click)="setLanguage(3)">language 3</ion-button>
+
+
+
+
+
+</ion-content>

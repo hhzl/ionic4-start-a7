@@ -1,0 +1,91 @@
+#learnWords2-area {
+  height: 80%;
+  width: 100%;
+  text-align: center;
+}
+
+
+.left {
+  float:left;
+  width: 47%;
+ /* height: 100%; */
+  text-align: center;
+  margin-right: 1%;
+  margin-left: 2%;
+}
+
+
+.optionCell { 
+    margin-bottom: 1%; 
+    width: 70%;
+    max-height: 24%;
+}
+
+
+
+
+.pic2select { 
+    margin-bottom: 1%; 
+    max-width: 45%;
+    max-height: 24%; 
+}
+
+
+.pic2select img {
+horizontal-align: middle;
+height: 100%;
+width: 100%;
+/* object-fit: contain; */
+}
+
+
+
+
+@media screen and (orientation:portrait) {
+  
+   .left {
+   float: left;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+  .right {
+    float:left;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+  /*
+  .optionRow {
+    width: 100%;
+    height: 45%;
+    margin-bottom: 5px;
+  }
+  .optionRow.Learn {
+    height: 45%;
+  }
+  */
+
+  .optionCell {
+    height: 10%;
+    height: 120px;
+  }
+ 
+img{
+height: 100%;
+width: 100%;
+object-fit: contain;
+}
+
+  .optionBtn {
+    height: 100%;
+  }
+  
+  #back, #forward {
+    margin-top: 2%;
+  }
+}

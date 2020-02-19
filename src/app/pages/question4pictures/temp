@@ -1,0 +1,119 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="optionCell" > 
+              <button ion-button id="1" type="button" class="optionBtn" (click)="listen($event)"><img src="assets/data/pictures/3.jpg"></button>
+            </div>
+              <button ion-button id="2" type="button" class="optionBtn" (click)="listen($event)"><img src="assets/data/pictures/14.jpg"></button>
+            </div>
+              <button ion-button id="3" type="button" class="optionBtn" (click)="listen($event)"><img src="assets/data/pictures/35.jpg"></button>
+            </div>
+              <button ion-button id="4" type="button" class="optionBtn" (click)="listen($event)"><img src="assets/data/pictures/42.jpg"></button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      ion-col
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+<button  (click)="click()" block>
+     <img src="assets/data/pictures/3.jpg">
+</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      ion-col
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      ion-col
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      ion-col
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      ion-col
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+<button  (click)="click()" block>
+     <img src="assets/data/pictures/3.jpg">
+</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+<button  (click)="click()" block>
+     <img src="assets/data/pictures/14.jpg">
+</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+<button  (click)="click()" block>
+     <img src="assets/data/pictures/35.jpg">
+</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+<button  (click)="click()" block>
+     <img src="assets/data/pictures/42.jpg">
+</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
