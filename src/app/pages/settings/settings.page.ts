@@ -42,7 +42,7 @@ this.includePicturesWithNoLabelCheckBox = this.service.settings.includePicturesW
   console.log('settings.page: setLanguage '+ n + ' (one less)');
   this.service.setSelectedLanguageNo(n);
   console.log('settings.page: selectedLanguage: ' + this.service.selectedLanguage);
-  this.navCtrl.navigateForward('/language-selection2')
+  this.navCtrl.navigateForward('/language-selection')
   this.boxOfQuestions.selectAllItems();
 
  }
