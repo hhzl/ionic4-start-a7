@@ -66,7 +66,7 @@ Assuming git is installed
 
 Otherwise download the file https://github.com/hhzl/ionic4-start-a7/archive/master.zip and unzip it. Then
 
-    cd ionic5-start-a7
+    cd ionic4-start-a7
 
     npm install
 
