@@ -42,11 +42,35 @@ export class BoxOfQuestionsService {
     this.selectedIndex = 0;
     if (this.service.settings.useBasicSelection) { 
         console.log('use only basic selection -- to implement');
-        }
-    this.limitSelectionIfLabelInSecondLanguageIsRequested();
+        } 
+   this.limitSelectionIfBasicSelectionIsRequested(); 
+   this.limitSelectionIfLabelInSecondLanguageIsRequested();
     this.numberOfItems = this.selectedItems.length;
     return this.getSelectedItems();
   }
+
+
+ limitSelectionIfBasicSelectionIsRequested() {
+    // basic selection means that there is a tag 'sel0'. 
+    console.log('limitSelectionIfBasicSelectionIsRequested - current no = ' + this.selectedItems.length);
+    var newSelectedItems : Array<any> = [];
+    var item : any;
+
+    if (this.service.settings.useBasicSelection) { 
+      for (item of this.selectedItems)
+         if (item.en) { // one of the data structure formats
+              
+             if ((item.tags).includes('sel0')) {console.log('sel0 is included'); newSelectedItems.push(item) }
+             }
+         else {// the test data, just choose all items
+              newSelectedItems.push(item)}
+         ;
+      console.log('limitSelectionIfBasicSelectionIsRequested - current no = ' + this.selectedItems.length);
+
+      this.selectedItems = newSelectedItems;
+    }
+  }
+
 
 
  limitSelectionIfLabelInSecondLanguageIsRequested() {
@@ -98,18 +122,22 @@ export class BoxOfQuestionsService {
 
 
 
+
+
+
+
   itemsByTag(itemsToFilter, tag){
 
-			function hasThisTag(anItem) {
+           function hasThisTag(anItem) {
 				var arrTags = anItem.tags.split(' ');
 				return (arrTags.indexOf(tag) >= 0);
-			}
+	   }
 
                         this.setSelectedIndex(0);
                         this.selectedItems = (itemsToFilter).filter(hasThisTag);
                         console.log('number of selected items: ' + this.selectedItems.length);
 			return this.selectedItems;
-		}
+  }
 
 
 
