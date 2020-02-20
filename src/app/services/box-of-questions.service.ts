@@ -60,7 +60,7 @@ export class BoxOfQuestionsService {
       for (item of this.selectedItems)
          if (item.en) { // one of the data structure formats
               
-             if ((item.tags).includes('sel0')) {console.log('sel0 is included'); newSelectedItems.push(item) }
+             if ((item.tags).includes('sel0')) {newSelectedItems.push(item) }
              }
          else {// the test data, just choose all items
               newSelectedItems.push(item)}
